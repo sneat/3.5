@@ -91,6 +91,12 @@
     <Compile Include="BMInterface.Designer.cs">
       <DependentUpon>BMInterface.cs</DependentUpon>
     </Compile>
+    <Compile Include="Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor.Designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -103,6 +109,9 @@
     <Compile Include="SwitcherMonitors.cs" />
     <EmbeddedResource Include="BMInterface.resx">
       <DependentUpon>BMInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

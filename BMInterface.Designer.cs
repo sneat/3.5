@@ -65,7 +65,7 @@
             this.cleanFeed2ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aux1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.black1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.blackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hDMI1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hDMI2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hDMI3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -162,9 +162,13 @@
             this.btn_key4air = new System.Windows.Forms.Button();
             this.btn_key1air = new System.Windows.Forms.Button();
             this.btn_auto = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_TransitionFrames = new System.Windows.Forms.TextBox();
+            this.tb_DKey1Rate = new System.Windows.Forms.TextBox();
+            this.tb_DKey2Rate = new System.Windows.Forms.TextBox();
+            this.btn_FTB = new System.Windows.Forms.Button();
+            this.tb_FTBRate = new System.Windows.Forms.TextBox();
+            this.btn_editor = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarTransitionPos)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -362,6 +366,7 @@
             this.blackToolStripMenuItem1.Name = "blackToolStripMenuItem1";
             this.blackToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.blackToolStripMenuItem1.Text = "Black";
+            this.blackToolStripMenuItem1.Click += new System.EventHandler(this.blackToolStripMenuItem1_Click);
             // 
             // hDMI1ToolStripMenuItem1
             // 
@@ -371,6 +376,7 @@
             this.hDMI1ToolStripMenuItem1.Name = "hDMI1ToolStripMenuItem1";
             this.hDMI1ToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.hDMI1ToolStripMenuItem1.Text = "HDMI1";
+            this.hDMI1ToolStripMenuItem1.Click += new System.EventHandler(this.hDMI1ToolStripMenuItem1_Click);
             // 
             // hDMI2ToolStripMenuItem1
             // 
@@ -380,6 +386,7 @@
             this.hDMI2ToolStripMenuItem1.Name = "hDMI2ToolStripMenuItem1";
             this.hDMI2ToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.hDMI2ToolStripMenuItem1.Text = "HDMI2";
+            this.hDMI2ToolStripMenuItem1.Click += new System.EventHandler(this.hDMI2ToolStripMenuItem1_Click);
             // 
             // hDMI3ToolStripMenuItem1
             // 
@@ -389,6 +396,7 @@
             this.hDMI3ToolStripMenuItem1.Name = "hDMI3ToolStripMenuItem1";
             this.hDMI3ToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.hDMI3ToolStripMenuItem1.Text = "HDMI3";
+            this.hDMI3ToolStripMenuItem1.Click += new System.EventHandler(this.hDMI3ToolStripMenuItem1_Click);
             // 
             // hDMI4ToolStripMenuItem1
             // 
@@ -398,6 +406,7 @@
             this.hDMI4ToolStripMenuItem1.Name = "hDMI4ToolStripMenuItem1";
             this.hDMI4ToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.hDMI4ToolStripMenuItem1.Text = "HDMI4";
+            this.hDMI4ToolStripMenuItem1.Click += new System.EventHandler(this.hDMI4ToolStripMenuItem1_Click);
             // 
             // camera1ToolStripMenuItem1
             // 
@@ -407,6 +416,7 @@
             this.camera1ToolStripMenuItem1.Name = "camera1ToolStripMenuItem1";
             this.camera1ToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.camera1ToolStripMenuItem1.Text = "Camera1";
+            this.camera1ToolStripMenuItem1.Click += new System.EventHandler(this.camera1ToolStripMenuItem1_Click);
             // 
             // camera2ToolStripMenuItem1
             // 
@@ -416,6 +426,7 @@
             this.camera2ToolStripMenuItem1.Name = "camera2ToolStripMenuItem1";
             this.camera2ToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.camera2ToolStripMenuItem1.Text = "Camera2";
+            this.camera2ToolStripMenuItem1.Click += new System.EventHandler(this.camera2ToolStripMenuItem1_Click);
             // 
             // camera3ToolStripMenuItem1
             // 
@@ -425,6 +436,7 @@
             this.camera3ToolStripMenuItem1.Name = "camera3ToolStripMenuItem1";
             this.camera3ToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.camera3ToolStripMenuItem1.Text = "Camera3";
+            this.camera3ToolStripMenuItem1.Click += new System.EventHandler(this.camera3ToolStripMenuItem1_Click);
             // 
             // camera4ToolStripMenuItem1
             // 
@@ -434,6 +446,7 @@
             this.camera4ToolStripMenuItem1.Name = "camera4ToolStripMenuItem1";
             this.camera4ToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.camera4ToolStripMenuItem1.Text = "Camera4";
+            this.camera4ToolStripMenuItem1.Click += new System.EventHandler(this.camera4ToolStripMenuItem1_Click);
             // 
             // colorBarsToolStripMenuItem1
             // 
@@ -443,6 +456,7 @@
             this.colorBarsToolStripMenuItem1.Name = "colorBarsToolStripMenuItem1";
             this.colorBarsToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.colorBarsToolStripMenuItem1.Text = "Color Bars";
+            this.colorBarsToolStripMenuItem1.Click += new System.EventHandler(this.colorBarsToolStripMenuItem1_Click);
             // 
             // color1ToolStripMenuItem1
             // 
@@ -452,6 +466,7 @@
             this.color1ToolStripMenuItem1.Name = "color1ToolStripMenuItem1";
             this.color1ToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.color1ToolStripMenuItem1.Text = "Color1";
+            this.color1ToolStripMenuItem1.Click += new System.EventHandler(this.color1ToolStripMenuItem1_Click);
             // 
             // color2ToolStripMenuItem1
             // 
@@ -461,6 +476,7 @@
             this.color2ToolStripMenuItem1.Name = "color2ToolStripMenuItem1";
             this.color2ToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.color2ToolStripMenuItem1.Text = "Color2";
+            this.color2ToolStripMenuItem1.Click += new System.EventHandler(this.color2ToolStripMenuItem1_Click);
             // 
             // mediaPlayer1ToolStripMenuItem1
             // 
@@ -470,6 +486,7 @@
             this.mediaPlayer1ToolStripMenuItem1.Name = "mediaPlayer1ToolStripMenuItem1";
             this.mediaPlayer1ToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.mediaPlayer1ToolStripMenuItem1.Text = "Media Player 1";
+            this.mediaPlayer1ToolStripMenuItem1.Click += new System.EventHandler(this.mediaPlayer1ToolStripMenuItem1_Click);
             // 
             // mediaPlayer1KeyToolStripMenuItem1
             // 
@@ -479,6 +496,7 @@
             this.mediaPlayer1KeyToolStripMenuItem1.Name = "mediaPlayer1KeyToolStripMenuItem1";
             this.mediaPlayer1KeyToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.mediaPlayer1KeyToolStripMenuItem1.Text = "Media Player 1 Key";
+            this.mediaPlayer1KeyToolStripMenuItem1.Click += new System.EventHandler(this.mediaPlayer1KeyToolStripMenuItem1_Click);
             // 
             // mediaPlayer2ToolStripMenuItem1
             // 
@@ -488,6 +506,7 @@
             this.mediaPlayer2ToolStripMenuItem1.Name = "mediaPlayer2ToolStripMenuItem1";
             this.mediaPlayer2ToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.mediaPlayer2ToolStripMenuItem1.Text = "Media Player 2";
+            this.mediaPlayer2ToolStripMenuItem1.Click += new System.EventHandler(this.mediaPlayer2ToolStripMenuItem1_Click);
             // 
             // mediaPlayer2KeyToolStripMenuItem1
             // 
@@ -497,6 +516,7 @@
             this.mediaPlayer2KeyToolStripMenuItem1.Name = "mediaPlayer2KeyToolStripMenuItem1";
             this.mediaPlayer2KeyToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.mediaPlayer2KeyToolStripMenuItem1.Text = "Media Player 2 Key";
+            this.mediaPlayer2KeyToolStripMenuItem1.Click += new System.EventHandler(this.mediaPlayer2KeyToolStripMenuItem1_Click);
             // 
             // programToolStripMenuItem1
             // 
@@ -506,6 +526,7 @@
             this.programToolStripMenuItem1.Name = "programToolStripMenuItem1";
             this.programToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.programToolStripMenuItem1.Text = "Program";
+            this.programToolStripMenuItem1.Click += new System.EventHandler(this.programToolStripMenuItem1_Click);
             // 
             // previewToolStripMenuItem1
             // 
@@ -515,6 +536,7 @@
             this.previewToolStripMenuItem1.Name = "previewToolStripMenuItem1";
             this.previewToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.previewToolStripMenuItem1.Text = "Preview";
+            this.previewToolStripMenuItem1.Click += new System.EventHandler(this.previewToolStripMenuItem1_Click);
             // 
             // cleanFeed1ToolStripMenuItem1
             // 
@@ -524,6 +546,7 @@
             this.cleanFeed1ToolStripMenuItem1.Name = "cleanFeed1ToolStripMenuItem1";
             this.cleanFeed1ToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.cleanFeed1ToolStripMenuItem1.Text = "Clean Feed 1";
+            this.cleanFeed1ToolStripMenuItem1.Click += new System.EventHandler(this.cleanFeed1ToolStripMenuItem1_Click);
             // 
             // cleanFeed2ToolStripMenuItem1
             // 
@@ -533,6 +556,7 @@
             this.cleanFeed2ToolStripMenuItem1.Name = "cleanFeed2ToolStripMenuItem1";
             this.cleanFeed2ToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.cleanFeed2ToolStripMenuItem1.Text = "Clean Feed 2";
+            this.cleanFeed2ToolStripMenuItem1.Click += new System.EventHandler(this.cleanFeed2ToolStripMenuItem1_Click);
             // 
             // menuStrip1
             // 
@@ -551,7 +575,7 @@
             // aux1ToolStripMenuItem
             // 
             this.aux1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.black1ToolStripMenuItem,
+            this.blackToolStripMenuItem,
             this.hDMI1ToolStripMenuItem,
             this.hDMI2ToolStripMenuItem,
             this.hDMI3ToolStripMenuItem,
@@ -576,14 +600,15 @@
             this.aux1ToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.aux1ToolStripMenuItem.Text = "Aux1";
             // 
-            // black1ToolStripMenuItem
+            // blackToolStripMenuItem
             // 
-            this.black1ToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("black1ToolStripMenuItem.BackgroundImage")));
-            this.black1ToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.black1ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.black1ToolStripMenuItem.Name = "black1ToolStripMenuItem";
-            this.black1ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
-            this.black1ToolStripMenuItem.Text = "Black";
+            this.blackToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("blackToolStripMenuItem.BackgroundImage")));
+            this.blackToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.blackToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.blackToolStripMenuItem.Name = "blackToolStripMenuItem";
+            this.blackToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.blackToolStripMenuItem.Text = "Black";
+            this.blackToolStripMenuItem.Click += new System.EventHandler(this.blackToolStripMenuItem_Click);
             // 
             // hDMI1ToolStripMenuItem
             // 
@@ -593,6 +618,7 @@
             this.hDMI1ToolStripMenuItem.Name = "hDMI1ToolStripMenuItem";
             this.hDMI1ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.hDMI1ToolStripMenuItem.Text = "HDMI1";
+            this.hDMI1ToolStripMenuItem.Click += new System.EventHandler(this.hDMI1ToolStripMenuItem_Click);
             // 
             // hDMI2ToolStripMenuItem
             // 
@@ -602,6 +628,7 @@
             this.hDMI2ToolStripMenuItem.Name = "hDMI2ToolStripMenuItem";
             this.hDMI2ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.hDMI2ToolStripMenuItem.Text = "HDMI2";
+            this.hDMI2ToolStripMenuItem.Click += new System.EventHandler(this.hDMI2ToolStripMenuItem_Click);
             // 
             // hDMI3ToolStripMenuItem
             // 
@@ -611,6 +638,7 @@
             this.hDMI3ToolStripMenuItem.Name = "hDMI3ToolStripMenuItem";
             this.hDMI3ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.hDMI3ToolStripMenuItem.Text = "HDMI3";
+            this.hDMI3ToolStripMenuItem.Click += new System.EventHandler(this.hDMI3ToolStripMenuItem_Click);
             // 
             // hDMI4ToolStripMenuItem
             // 
@@ -620,6 +648,7 @@
             this.hDMI4ToolStripMenuItem.Name = "hDMI4ToolStripMenuItem";
             this.hDMI4ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.hDMI4ToolStripMenuItem.Text = "HDMI4";
+            this.hDMI4ToolStripMenuItem.Click += new System.EventHandler(this.hDMI4ToolStripMenuItem_Click);
             // 
             // camera1ToolStripMenuItem
             // 
@@ -629,6 +658,7 @@
             this.camera1ToolStripMenuItem.Name = "camera1ToolStripMenuItem";
             this.camera1ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.camera1ToolStripMenuItem.Text = "Camera1";
+            this.camera1ToolStripMenuItem.Click += new System.EventHandler(this.camera1ToolStripMenuItem_Click);
             // 
             // camera2ToolStripMenuItem
             // 
@@ -638,6 +668,7 @@
             this.camera2ToolStripMenuItem.Name = "camera2ToolStripMenuItem";
             this.camera2ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.camera2ToolStripMenuItem.Text = "Camera2";
+            this.camera2ToolStripMenuItem.Click += new System.EventHandler(this.camera2ToolStripMenuItem_Click);
             // 
             // camera3ToolStripMenuItem
             // 
@@ -647,6 +678,7 @@
             this.camera3ToolStripMenuItem.Name = "camera3ToolStripMenuItem";
             this.camera3ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.camera3ToolStripMenuItem.Text = "Camera3";
+            this.camera3ToolStripMenuItem.Click += new System.EventHandler(this.camera3ToolStripMenuItem_Click);
             // 
             // camera4ToolStripMenuItem
             // 
@@ -656,6 +688,7 @@
             this.camera4ToolStripMenuItem.Name = "camera4ToolStripMenuItem";
             this.camera4ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.camera4ToolStripMenuItem.Text = "Camera4";
+            this.camera4ToolStripMenuItem.Click += new System.EventHandler(this.camera4ToolStripMenuItem_Click);
             // 
             // colorBarsToolStripMenuItem
             // 
@@ -665,6 +698,7 @@
             this.colorBarsToolStripMenuItem.Name = "colorBarsToolStripMenuItem";
             this.colorBarsToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.colorBarsToolStripMenuItem.Text = "Color Bars";
+            this.colorBarsToolStripMenuItem.Click += new System.EventHandler(this.colorBarsToolStripMenuItem_Click);
             // 
             // color1ToolStripMenuItem
             // 
@@ -674,6 +708,7 @@
             this.color1ToolStripMenuItem.Name = "color1ToolStripMenuItem";
             this.color1ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.color1ToolStripMenuItem.Text = "Color1";
+            this.color1ToolStripMenuItem.Click += new System.EventHandler(this.color1ToolStripMenuItem_Click);
             // 
             // color2ToolStripMenuItem
             // 
@@ -683,6 +718,7 @@
             this.color2ToolStripMenuItem.Name = "color2ToolStripMenuItem";
             this.color2ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.color2ToolStripMenuItem.Text = "Color2";
+            this.color2ToolStripMenuItem.Click += new System.EventHandler(this.color2ToolStripMenuItem_Click);
             // 
             // mediaPlayer1ToolStripMenuItem
             // 
@@ -692,6 +728,7 @@
             this.mediaPlayer1ToolStripMenuItem.Name = "mediaPlayer1ToolStripMenuItem";
             this.mediaPlayer1ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.mediaPlayer1ToolStripMenuItem.Text = "Media Player 1";
+            this.mediaPlayer1ToolStripMenuItem.Click += new System.EventHandler(this.mediaPlayer1ToolStripMenuItem_Click);
             // 
             // mediaPlayer1KeyToolStripMenuItem
             // 
@@ -701,6 +738,7 @@
             this.mediaPlayer1KeyToolStripMenuItem.Name = "mediaPlayer1KeyToolStripMenuItem";
             this.mediaPlayer1KeyToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.mediaPlayer1KeyToolStripMenuItem.Text = "Media Player 1 Key";
+            this.mediaPlayer1KeyToolStripMenuItem.Click += new System.EventHandler(this.mediaPlayer1KeyToolStripMenuItem_Click);
             // 
             // mediaPlayer2ToolStripMenuItem
             // 
@@ -710,6 +748,7 @@
             this.mediaPlayer2ToolStripMenuItem.Name = "mediaPlayer2ToolStripMenuItem";
             this.mediaPlayer2ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.mediaPlayer2ToolStripMenuItem.Text = "Media Player 2";
+            this.mediaPlayer2ToolStripMenuItem.Click += new System.EventHandler(this.mediaPlayer2ToolStripMenuItem_Click);
             // 
             // mediaPlayer2KeyToolStripMenuItem
             // 
@@ -719,6 +758,7 @@
             this.mediaPlayer2KeyToolStripMenuItem.Name = "mediaPlayer2KeyToolStripMenuItem";
             this.mediaPlayer2KeyToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.mediaPlayer2KeyToolStripMenuItem.Text = "Media Player 2 Key";
+            this.mediaPlayer2KeyToolStripMenuItem.Click += new System.EventHandler(this.mediaPlayer2KeyToolStripMenuItem_Click);
             // 
             // programToolStripMenuItem
             // 
@@ -728,6 +768,7 @@
             this.programToolStripMenuItem.Name = "programToolStripMenuItem";
             this.programToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.programToolStripMenuItem.Text = "Program";
+            this.programToolStripMenuItem.Click += new System.EventHandler(this.programToolStripMenuItem_Click);
             // 
             // previewToolStripMenuItem
             // 
@@ -737,6 +778,7 @@
             this.previewToolStripMenuItem.Name = "previewToolStripMenuItem";
             this.previewToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.previewToolStripMenuItem.Text = "Preview";
+            this.previewToolStripMenuItem.Click += new System.EventHandler(this.previewToolStripMenuItem_Click);
             // 
             // cleanFeed1ToolStripMenuItem
             // 
@@ -746,6 +788,7 @@
             this.cleanFeed1ToolStripMenuItem.Name = "cleanFeed1ToolStripMenuItem";
             this.cleanFeed1ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.cleanFeed1ToolStripMenuItem.Text = "Clean Feed 1";
+            this.cleanFeed1ToolStripMenuItem.Click += new System.EventHandler(this.cleanFeed1ToolStripMenuItem_Click);
             // 
             // cleanFeed2ToolStripMenuItem
             // 
@@ -755,6 +798,7 @@
             this.cleanFeed2ToolStripMenuItem.Name = "cleanFeed2ToolStripMenuItem";
             this.cleanFeed2ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.cleanFeed2ToolStripMenuItem.Text = "Clean Feed 2";
+            this.cleanFeed2ToolStripMenuItem.Click += new System.EventHandler(this.cleanFeed2ToolStripMenuItem_Click);
             // 
             // aux3ToolStripMenuItem
             // 
@@ -792,6 +836,7 @@
             this.blackToolStripMenuItem2.Name = "blackToolStripMenuItem2";
             this.blackToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.blackToolStripMenuItem2.Text = "Black";
+            this.blackToolStripMenuItem2.Click += new System.EventHandler(this.blackToolStripMenuItem2_Click);
             // 
             // hDMI1ToolStripMenuItem2
             // 
@@ -801,6 +846,7 @@
             this.hDMI1ToolStripMenuItem2.Name = "hDMI1ToolStripMenuItem2";
             this.hDMI1ToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.hDMI1ToolStripMenuItem2.Text = "HDMI1";
+            this.hDMI1ToolStripMenuItem2.Click += new System.EventHandler(this.hDMI1ToolStripMenuItem2_Click);
             // 
             // hDMI2ToolStripMenuItem2
             // 
@@ -810,6 +856,7 @@
             this.hDMI2ToolStripMenuItem2.Name = "hDMI2ToolStripMenuItem2";
             this.hDMI2ToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.hDMI2ToolStripMenuItem2.Text = "HDMI2";
+            this.hDMI2ToolStripMenuItem2.Click += new System.EventHandler(this.hDMI2ToolStripMenuItem2_Click);
             // 
             // hDMI3ToolStripMenuItem2
             // 
@@ -819,6 +866,7 @@
             this.hDMI3ToolStripMenuItem2.Name = "hDMI3ToolStripMenuItem2";
             this.hDMI3ToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.hDMI3ToolStripMenuItem2.Text = "HDMI3";
+            this.hDMI3ToolStripMenuItem2.Click += new System.EventHandler(this.hDMI3ToolStripMenuItem2_Click);
             // 
             // hDMI4ToolStripMenuItem2
             // 
@@ -828,6 +876,7 @@
             this.hDMI4ToolStripMenuItem2.Name = "hDMI4ToolStripMenuItem2";
             this.hDMI4ToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.hDMI4ToolStripMenuItem2.Text = "HDMI4";
+            this.hDMI4ToolStripMenuItem2.Click += new System.EventHandler(this.hDMI4ToolStripMenuItem2_Click);
             // 
             // camera1ToolStripMenuItem2
             // 
@@ -837,6 +886,7 @@
             this.camera1ToolStripMenuItem2.Name = "camera1ToolStripMenuItem2";
             this.camera1ToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.camera1ToolStripMenuItem2.Text = "Camera1";
+            this.camera1ToolStripMenuItem2.Click += new System.EventHandler(this.camera1ToolStripMenuItem2_Click);
             // 
             // camera2ToolStripMenuItem2
             // 
@@ -846,6 +896,7 @@
             this.camera2ToolStripMenuItem2.Name = "camera2ToolStripMenuItem2";
             this.camera2ToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.camera2ToolStripMenuItem2.Text = "Camera2";
+            this.camera2ToolStripMenuItem2.Click += new System.EventHandler(this.camera2ToolStripMenuItem2_Click);
             // 
             // camera3ToolStripMenuItem2
             // 
@@ -855,6 +906,7 @@
             this.camera3ToolStripMenuItem2.Name = "camera3ToolStripMenuItem2";
             this.camera3ToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.camera3ToolStripMenuItem2.Text = "Camera3";
+            this.camera3ToolStripMenuItem2.Click += new System.EventHandler(this.camera3ToolStripMenuItem2_Click);
             // 
             // camera4ToolStripMenuItem2
             // 
@@ -864,6 +916,7 @@
             this.camera4ToolStripMenuItem2.Name = "camera4ToolStripMenuItem2";
             this.camera4ToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.camera4ToolStripMenuItem2.Text = "Camera4";
+            this.camera4ToolStripMenuItem2.Click += new System.EventHandler(this.camera4ToolStripMenuItem2_Click);
             // 
             // colorBarsToolStripMenuItem2
             // 
@@ -873,6 +926,7 @@
             this.colorBarsToolStripMenuItem2.Name = "colorBarsToolStripMenuItem2";
             this.colorBarsToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.colorBarsToolStripMenuItem2.Text = "Color Bars";
+            this.colorBarsToolStripMenuItem2.Click += new System.EventHandler(this.colorBarsToolStripMenuItem2_Click);
             // 
             // color1ToolStripMenuItem2
             // 
@@ -882,6 +936,7 @@
             this.color1ToolStripMenuItem2.Name = "color1ToolStripMenuItem2";
             this.color1ToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.color1ToolStripMenuItem2.Text = "Color 1";
+            this.color1ToolStripMenuItem2.Click += new System.EventHandler(this.color1ToolStripMenuItem2_Click);
             // 
             // color2ToolStripMenuItem2
             // 
@@ -891,6 +946,7 @@
             this.color2ToolStripMenuItem2.Name = "color2ToolStripMenuItem2";
             this.color2ToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.color2ToolStripMenuItem2.Text = "Color2";
+            this.color2ToolStripMenuItem2.Click += new System.EventHandler(this.color2ToolStripMenuItem2_Click);
             // 
             // mediaPlayer1ToolStripMenuItem2
             // 
@@ -900,6 +956,7 @@
             this.mediaPlayer1ToolStripMenuItem2.Name = "mediaPlayer1ToolStripMenuItem2";
             this.mediaPlayer1ToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.mediaPlayer1ToolStripMenuItem2.Text = "Media Player 1";
+            this.mediaPlayer1ToolStripMenuItem2.Click += new System.EventHandler(this.mediaPlayer1ToolStripMenuItem2_Click);
             // 
             // mediaPlayer1KeyToolStripMenuItem2
             // 
@@ -909,6 +966,7 @@
             this.mediaPlayer1KeyToolStripMenuItem2.Name = "mediaPlayer1KeyToolStripMenuItem2";
             this.mediaPlayer1KeyToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.mediaPlayer1KeyToolStripMenuItem2.Text = "Media Player 1 Key";
+            this.mediaPlayer1KeyToolStripMenuItem2.Click += new System.EventHandler(this.mediaPlayer1KeyToolStripMenuItem2_Click);
             // 
             // mediaPlayer2ToolStripMenuItem2
             // 
@@ -918,6 +976,7 @@
             this.mediaPlayer2ToolStripMenuItem2.Name = "mediaPlayer2ToolStripMenuItem2";
             this.mediaPlayer2ToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.mediaPlayer2ToolStripMenuItem2.Text = "Media Player 2";
+            this.mediaPlayer2ToolStripMenuItem2.Click += new System.EventHandler(this.mediaPlayer2ToolStripMenuItem2_Click);
             // 
             // mediaPlayer2KeyToolStripMenuItem2
             // 
@@ -927,6 +986,7 @@
             this.mediaPlayer2KeyToolStripMenuItem2.Name = "mediaPlayer2KeyToolStripMenuItem2";
             this.mediaPlayer2KeyToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.mediaPlayer2KeyToolStripMenuItem2.Text = "Media Player 2 Key";
+            this.mediaPlayer2KeyToolStripMenuItem2.Click += new System.EventHandler(this.mediaPlayer2KeyToolStripMenuItem2_Click);
             // 
             // programToolStripMenuItem2
             // 
@@ -936,6 +996,7 @@
             this.programToolStripMenuItem2.Name = "programToolStripMenuItem2";
             this.programToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.programToolStripMenuItem2.Text = "Program";
+            this.programToolStripMenuItem2.Click += new System.EventHandler(this.programToolStripMenuItem2_Click);
             // 
             // previewToolStripMenuItem2
             // 
@@ -945,6 +1006,7 @@
             this.previewToolStripMenuItem2.Name = "previewToolStripMenuItem2";
             this.previewToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.previewToolStripMenuItem2.Text = "Preview";
+            this.previewToolStripMenuItem2.Click += new System.EventHandler(this.previewToolStripMenuItem2_Click);
             // 
             // cleanFeed1ToolStripMenuItem2
             // 
@@ -954,6 +1016,7 @@
             this.cleanFeed1ToolStripMenuItem2.Name = "cleanFeed1ToolStripMenuItem2";
             this.cleanFeed1ToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.cleanFeed1ToolStripMenuItem2.Text = "Clean Feed 1";
+            this.cleanFeed1ToolStripMenuItem2.Click += new System.EventHandler(this.cleanFeed1ToolStripMenuItem2_Click);
             // 
             // cleanFeed2ToolStripMenuItem2
             // 
@@ -963,6 +1026,7 @@
             this.cleanFeed2ToolStripMenuItem2.Name = "cleanFeed2ToolStripMenuItem2";
             this.cleanFeed2ToolStripMenuItem2.Size = new System.Drawing.Size(173, 22);
             this.cleanFeed2ToolStripMenuItem2.Text = "Clean Feed 2";
+            this.cleanFeed2ToolStripMenuItem2.Click += new System.EventHandler(this.cleanFeed2ToolStripMenuItem2_Click);
             // 
             // adminToolStripMenuItem
             // 
@@ -982,6 +1046,7 @@
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
             this.closeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.closeToolStripMenuItem.Text = "Close";
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // reconnectToolStripMenuItem
             // 
@@ -991,6 +1056,7 @@
             this.reconnectToolStripMenuItem.Name = "reconnectToolStripMenuItem";
             this.reconnectToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.reconnectToolStripMenuItem.Text = "Reconnect";
+            this.reconnectToolStripMenuItem.Click += new System.EventHandler(this.reconnectToolStripMenuItem_Click);
             // 
             // btn_prevtrans
             // 
@@ -1006,6 +1072,7 @@
             this.btn_prevtrans.TabIndex = 213;
             this.btn_prevtrans.Text = "Prev Trans";
             this.btn_prevtrans.UseVisualStyleBackColor = true;
+            this.btn_prevtrans.Click += new System.EventHandler(this.btn_prevtrans_Click);
             // 
             // btn_mix
             // 
@@ -1021,6 +1088,7 @@
             this.btn_mix.TabIndex = 212;
             this.btn_mix.Text = "Mix";
             this.btn_mix.UseVisualStyleBackColor = true;
+            this.btn_mix.Click += new System.EventHandler(this.btn_mix_Click);
             // 
             // btn_wipe
             // 
@@ -1036,6 +1104,7 @@
             this.btn_wipe.TabIndex = 211;
             this.btn_wipe.Text = "Wipe";
             this.btn_wipe.UseVisualStyleBackColor = true;
+            this.btn_wipe.Click += new System.EventHandler(this.btn_wipe_Click);
             // 
             // btn_DVE
             // 
@@ -1051,6 +1120,7 @@
             this.btn_DVE.TabIndex = 210;
             this.btn_DVE.Text = "DVE";
             this.btn_DVE.UseVisualStyleBackColor = true;
+            this.btn_DVE.Click += new System.EventHandler(this.btn_DVE_Click);
             // 
             // btn_sting
             // 
@@ -1066,6 +1136,7 @@
             this.btn_sting.TabIndex = 209;
             this.btn_sting.Text = "Sting";
             this.btn_sting.UseVisualStyleBackColor = true;
+            this.btn_sting.Click += new System.EventHandler(this.btn_sting_Click);
             // 
             // btn_dip
             // 
@@ -1081,6 +1152,7 @@
             this.btn_dip.TabIndex = 208;
             this.btn_dip.Text = "Dip";
             this.btn_dip.UseVisualStyleBackColor = true;
+            this.btn_dip.Click += new System.EventHandler(this.btn_dip_Click);
             // 
             // btn_fadetoblack
             // 
@@ -1111,6 +1183,7 @@
             this.btn_cuttrans.TabIndex = 203;
             this.btn_cuttrans.Text = "Cut";
             this.btn_cuttrans.UseVisualStyleBackColor = true;
+            this.btn_cuttrans.Click += new System.EventHandler(this.btn_cuttrans_Click);
             // 
             // btn_autotrans
             // 
@@ -1126,6 +1199,7 @@
             this.btn_autotrans.TabIndex = 202;
             this.btn_autotrans.Text = "Auto";
             this.btn_autotrans.UseVisualStyleBackColor = true;
+            this.btn_autotrans.Click += new System.EventHandler(this.btn_autotrans_Click);
             // 
             // btn_me1_dkey2auto
             // 
@@ -1141,6 +1215,7 @@
             this.btn_me1_dkey2auto.TabIndex = 199;
             this.btn_me1_dkey2auto.Text = "Auto";
             this.btn_me1_dkey2auto.UseVisualStyleBackColor = true;
+            this.btn_me1_dkey2auto.Click += new System.EventHandler(this.btn_me1_dkey2auto_Click);
             // 
             // btn_me1_dkey1auto
             // 
@@ -1156,6 +1231,7 @@
             this.btn_me1_dkey1auto.TabIndex = 198;
             this.btn_me1_dkey1auto.Text = "Auto";
             this.btn_me1_dkey1auto.UseVisualStyleBackColor = true;
+            this.btn_me1_dkey1auto.Click += new System.EventHandler(this.btn_me1_dkey1auto_Click);
             // 
             // btn_me1_dkey2air
             // 
@@ -1171,6 +1247,7 @@
             this.btn_me1_dkey2air.TabIndex = 197;
             this.btn_me1_dkey2air.Text = "On Air";
             this.btn_me1_dkey2air.UseVisualStyleBackColor = true;
+            this.btn_me1_dkey2air.Click += new System.EventHandler(this.btn_me1_dkey2air_Click);
             // 
             // btn_me1_dkey2tie
             // 
@@ -1186,6 +1263,7 @@
             this.btn_me1_dkey2tie.TabIndex = 191;
             this.btn_me1_dkey2tie.Text = "TIE";
             this.btn_me1_dkey2tie.UseVisualStyleBackColor = true;
+            this.btn_me1_dkey2tie.Click += new System.EventHandler(this.btn_me1_dkey2tie_Click);
             // 
             // btn_me1_dkey1air
             // 
@@ -1201,6 +1279,7 @@
             this.btn_me1_dkey1air.TabIndex = 196;
             this.btn_me1_dkey1air.Text = "On Air";
             this.btn_me1_dkey1air.UseVisualStyleBackColor = true;
+            this.btn_me1_dkey1air.Click += new System.EventHandler(this.btn_me1_dkey1air_Click);
             // 
             // btn_me1_dkey1tie
             // 
@@ -1216,6 +1295,7 @@
             this.btn_me1_dkey1tie.TabIndex = 189;
             this.btn_me1_dkey1tie.Text = "TIE";
             this.btn_me1_dkey1tie.UseVisualStyleBackColor = true;
+            this.btn_me1_dkey1tie.Click += new System.EventHandler(this.btn_me1_dkey1tie_Click);
             // 
             // btn_media1prew
             // 
@@ -1231,6 +1311,7 @@
             this.btn_media1prew.TabIndex = 184;
             this.btn_media1prew.Text = "1";
             this.btn_media1prew.UseVisualStyleBackColor = true;
+            this.btn_media1prew.Click += new System.EventHandler(this.btn_media1prew_Click);
             // 
             // btn_media2prew
             // 
@@ -1246,6 +1327,7 @@
             this.btn_media2prew.TabIndex = 183;
             this.btn_media2prew.Text = "2";
             this.btn_media2prew.UseVisualStyleBackColor = true;
+            this.btn_media2prew.Click += new System.EventHandler(this.btn_media2prew_Click);
             // 
             // btn_color1prew
             // 
@@ -1261,6 +1343,7 @@
             this.btn_color1prew.TabIndex = 182;
             this.btn_color1prew.Text = "1";
             this.btn_color1prew.UseVisualStyleBackColor = true;
+            this.btn_color1prew.Click += new System.EventHandler(this.btn_color1prew_Click);
             // 
             // btn_media1prog
             // 
@@ -1276,6 +1359,7 @@
             this.btn_media1prog.TabIndex = 167;
             this.btn_media1prog.Text = "1";
             this.btn_media1prog.UseVisualStyleBackColor = true;
+            this.btn_media1prog.Click += new System.EventHandler(this.btn_media1prog_Click);
             // 
             // btn_media2prog
             // 
@@ -1291,6 +1375,7 @@
             this.btn_media2prog.TabIndex = 166;
             this.btn_media2prog.Text = "2";
             this.btn_media2prog.UseVisualStyleBackColor = true;
+            this.btn_media2prog.Click += new System.EventHandler(this.btn_media2prog_Click);
             // 
             // btn_color1prog
             // 
@@ -1306,6 +1391,7 @@
             this.btn_color1prog.TabIndex = 165;
             this.btn_color1prog.Text = "1";
             this.btn_color1prog.UseVisualStyleBackColor = true;
+            this.btn_color1prog.Click += new System.EventHandler(this.btn_color1prog_Click);
             // 
             // btn_color2prog
             // 
@@ -1321,6 +1407,7 @@
             this.btn_color2prog.TabIndex = 164;
             this.btn_color2prog.Text = "2";
             this.btn_color2prog.UseVisualStyleBackColor = true;
+            this.btn_color2prog.Click += new System.EventHandler(this.btn_color2prog_Click);
             // 
             // btn_barsprog
             // 
@@ -1336,6 +1423,7 @@
             this.btn_barsprog.TabIndex = 163;
             this.btn_barsprog.Text = "Bars";
             this.btn_barsprog.UseVisualStyleBackColor = true;
+            this.btn_barsprog.Click += new System.EventHandler(this.btn_barsprog_Click);
             // 
             // btn_blackprog
             // 
@@ -1351,6 +1439,7 @@
             this.btn_blackprog.TabIndex = 162;
             this.btn_blackprog.Text = "Black";
             this.btn_blackprog.UseVisualStyleBackColor = true;
+            this.btn_blackprog.Click += new System.EventHandler(this.btn_blackprog_Click);
             // 
             // btn_camera2prog
             // 
@@ -1366,6 +1455,7 @@
             this.btn_camera2prog.TabIndex = 161;
             this.btn_camera2prog.Text = "Cam 2";
             this.btn_camera2prog.UseVisualStyleBackColor = true;
+            this.btn_camera2prog.Click += new System.EventHandler(this.btn_camera2prog_Click);
             // 
             // btn_camera3prog
             // 
@@ -1381,6 +1471,7 @@
             this.btn_camera3prog.TabIndex = 160;
             this.btn_camera3prog.Text = "Cam 3";
             this.btn_camera3prog.UseVisualStyleBackColor = true;
+            this.btn_camera3prog.Click += new System.EventHandler(this.btn_camera3prog_Click);
             // 
             // btn_camera4prog
             // 
@@ -1396,6 +1487,7 @@
             this.btn_camera4prog.TabIndex = 159;
             this.btn_camera4prog.Text = "Cam 4";
             this.btn_camera4prog.UseVisualStyleBackColor = true;
+            this.btn_camera4prog.Click += new System.EventHandler(this.btn_camera4prog_Click);
             // 
             // btn_camera1prog
             // 
@@ -1411,6 +1503,7 @@
             this.btn_camera1prog.TabIndex = 158;
             this.btn_camera1prog.Text = "Cam 1";
             this.btn_camera1prog.UseVisualStyleBackColor = true;
+            this.btn_camera1prog.Click += new System.EventHandler(this.btn_camera1prog_Click);
             // 
             // btn_color2prew
             // 
@@ -1426,6 +1519,7 @@
             this.btn_color2prew.TabIndex = 181;
             this.btn_color2prew.Text = "2";
             this.btn_color2prew.UseVisualStyleBackColor = true;
+            this.btn_color2prew.Click += new System.EventHandler(this.btn_color2prew_Click);
             // 
             // btn_barsprew
             // 
@@ -1441,6 +1535,7 @@
             this.btn_barsprew.TabIndex = 180;
             this.btn_barsprew.Text = "Bars";
             this.btn_barsprew.UseVisualStyleBackColor = true;
+            this.btn_barsprew.Click += new System.EventHandler(this.btn_barsprew_Click);
             // 
             // btn_blackprew
             // 
@@ -1456,6 +1551,7 @@
             this.btn_blackprew.TabIndex = 179;
             this.btn_blackprew.Text = "Black";
             this.btn_blackprew.UseVisualStyleBackColor = true;
+            this.btn_blackprew.Click += new System.EventHandler(this.btn_blackprew_Click);
             // 
             // btn_camera2prew
             // 
@@ -1471,6 +1567,7 @@
             this.btn_camera2prew.TabIndex = 178;
             this.btn_camera2prew.Text = "Cam 2";
             this.btn_camera2prew.UseVisualStyleBackColor = true;
+            this.btn_camera2prew.Click += new System.EventHandler(this.btn_camera2prew_Click);
             // 
             // btn_camera3prew
             // 
@@ -1486,6 +1583,7 @@
             this.btn_camera3prew.TabIndex = 177;
             this.btn_camera3prew.Text = "Cam 3";
             this.btn_camera3prew.UseVisualStyleBackColor = true;
+            this.btn_camera3prew.Click += new System.EventHandler(this.btn_camera3prew_Click);
             // 
             // btn_camera4prew
             // 
@@ -1501,6 +1599,7 @@
             this.btn_camera4prew.TabIndex = 176;
             this.btn_camera4prew.Text = "Cam 4";
             this.btn_camera4prew.UseVisualStyleBackColor = true;
+            this.btn_camera4prew.Click += new System.EventHandler(this.btn_camera4prew_Click);
             // 
             // btn_camera1prew
             // 
@@ -1516,6 +1615,7 @@
             this.btn_camera1prew.TabIndex = 175;
             this.btn_camera1prew.Text = "Cam 1";
             this.btn_camera1prew.UseVisualStyleBackColor = true;
+            this.btn_camera1prew.Click += new System.EventHandler(this.btn_camera1prew_Click);
             // 
             // btn_hdmi2prew
             // 
@@ -1531,6 +1631,7 @@
             this.btn_hdmi2prew.TabIndex = 174;
             this.btn_hdmi2prew.Text = "HDMI2";
             this.btn_hdmi2prew.UseVisualStyleBackColor = true;
+            this.btn_hdmi2prew.Click += new System.EventHandler(this.btn_hdmi2prew_Click);
             // 
             // btn_hdmi3prew
             // 
@@ -1546,6 +1647,7 @@
             this.btn_hdmi3prew.TabIndex = 173;
             this.btn_hdmi3prew.Text = "HDMI3";
             this.btn_hdmi3prew.UseVisualStyleBackColor = true;
+            this.btn_hdmi3prew.Click += new System.EventHandler(this.btn_hdmi3prew_Click);
             // 
             // btn_hdmi4prew
             // 
@@ -1561,6 +1663,7 @@
             this.btn_hdmi4prew.TabIndex = 172;
             this.btn_hdmi4prew.Text = "HDMI4";
             this.btn_hdmi4prew.UseVisualStyleBackColor = true;
+            this.btn_hdmi4prew.Click += new System.EventHandler(this.btn_hdmi4prew_Click);
             // 
             // btn_hdmi1prew
             // 
@@ -1576,6 +1679,7 @@
             this.btn_hdmi1prew.TabIndex = 171;
             this.btn_hdmi1prew.Text = "HDMI1";
             this.btn_hdmi1prew.UseVisualStyleBackColor = true;
+            this.btn_hdmi1prew.Click += new System.EventHandler(this.btn_hdmi1prew_Click);
             // 
             // btn_hdmi2prog
             // 
@@ -1591,6 +1695,7 @@
             this.btn_hdmi2prog.TabIndex = 157;
             this.btn_hdmi2prog.Text = "HDMI2";
             this.btn_hdmi2prog.UseVisualStyleBackColor = true;
+            this.btn_hdmi2prog.Click += new System.EventHandler(this.btn_hdmi2prog_Click);
             // 
             // btn_key1layer
             // 
@@ -1606,7 +1711,6 @@
             this.btn_key1layer.TabIndex = 149;
             this.btn_key1layer.Text = "Key 1";
             this.btn_key1layer.UseVisualStyleBackColor = true;
-            this.btn_key1layer.Click += new System.EventHandler(this.btn_key1layer_Click);
             // 
             // btn_hdmi3prog
             // 
@@ -1622,6 +1726,7 @@
             this.btn_hdmi3prog.TabIndex = 156;
             this.btn_hdmi3prog.Text = "HDMI3";
             this.btn_hdmi3prog.UseVisualStyleBackColor = true;
+            this.btn_hdmi3prog.Click += new System.EventHandler(this.btn_hdmi3prog_Click);
             // 
             // btn_hdmi4prog
             // 
@@ -1637,6 +1742,7 @@
             this.btn_hdmi4prog.TabIndex = 155;
             this.btn_hdmi4prog.Text = "HDMI4";
             this.btn_hdmi4prog.UseVisualStyleBackColor = true;
+            this.btn_hdmi4prog.Click += new System.EventHandler(this.btn_hdmi4prog_Click);
             // 
             // btn_hdmi1prog
             // 
@@ -1652,6 +1758,7 @@
             this.btn_hdmi1prog.TabIndex = 154;
             this.btn_hdmi1prog.Text = "HDMI1";
             this.btn_hdmi1prog.UseVisualStyleBackColor = true;
+            this.btn_hdmi1prog.Click += new System.EventHandler(this.btn_hdmi1prog_Click);
             // 
             // btn_bkgdlayer
             // 
@@ -1788,51 +1895,117 @@
             this.btn_auto.Text = "Auto";
             this.btn_auto.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // tb_TransitionFrames
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Black;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Yellow;
-            this.textBox1.Location = new System.Drawing.Point(595, 514);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(72, 35);
-            this.textBox1.TabIndex = 214;
-            this.textBox1.Text = "30";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_TransitionFrames.BackColor = System.Drawing.Color.Black;
+            this.tb_TransitionFrames.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_TransitionFrames.ForeColor = System.Drawing.Color.Yellow;
+            this.tb_TransitionFrames.Location = new System.Drawing.Point(595, 514);
+            this.tb_TransitionFrames.Name = "tb_TransitionFrames";
+            this.tb_TransitionFrames.ReadOnly = true;
+            this.tb_TransitionFrames.Size = new System.Drawing.Size(72, 35);
+            this.tb_TransitionFrames.TabIndex = 214;
+            this.tb_TransitionFrames.Text = "30";
+            this.tb_TransitionFrames.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // tb_DKey1Rate
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Black;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Yellow;
-            this.textBox2.Location = new System.Drawing.Point(902, 177);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(60, 35);
-            this.textBox2.TabIndex = 215;
-            this.textBox2.Text = "30";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_DKey1Rate.BackColor = System.Drawing.Color.Black;
+            this.tb_DKey1Rate.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_DKey1Rate.ForeColor = System.Drawing.Color.Yellow;
+            this.tb_DKey1Rate.Location = new System.Drawing.Point(902, 177);
+            this.tb_DKey1Rate.Name = "tb_DKey1Rate";
+            this.tb_DKey1Rate.ReadOnly = true;
+            this.tb_DKey1Rate.Size = new System.Drawing.Size(60, 35);
+            this.tb_DKey1Rate.TabIndex = 215;
+            this.tb_DKey1Rate.Text = "30";
+            this.tb_DKey1Rate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // tb_DKey2Rate
             // 
-            this.textBox3.BackColor = System.Drawing.Color.Black;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Yellow;
-            this.textBox3.Location = new System.Drawing.Point(974, 177);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(60, 35);
-            this.textBox3.TabIndex = 216;
-            this.textBox3.Text = "30";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_DKey2Rate.BackColor = System.Drawing.Color.Black;
+            this.tb_DKey2Rate.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_DKey2Rate.ForeColor = System.Drawing.Color.Yellow;
+            this.tb_DKey2Rate.Location = new System.Drawing.Point(974, 177);
+            this.tb_DKey2Rate.Name = "tb_DKey2Rate";
+            this.tb_DKey2Rate.ReadOnly = true;
+            this.tb_DKey2Rate.Size = new System.Drawing.Size(60, 35);
+            this.tb_DKey2Rate.TabIndex = 216;
+            this.tb_DKey2Rate.Text = "30";
+            this.tb_DKey2Rate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btn_FTB
+            // 
+            this.btn_FTB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_FTB.BackgroundImage")));
+            this.btn_FTB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_FTB.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_FTB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_FTB.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_FTB.ForeColor = System.Drawing.Color.White;
+            this.btn_FTB.Location = new System.Drawing.Point(974, 487);
+            this.btn_FTB.Name = "btn_FTB";
+            this.btn_FTB.Size = new System.Drawing.Size(60, 60);
+            this.btn_FTB.TabIndex = 217;
+            this.btn_FTB.Text = "FTB";
+            this.btn_FTB.UseVisualStyleBackColor = true;
+            this.btn_FTB.Click += new System.EventHandler(this.btn_FTB_Click);
+            // 
+            // tb_FTBRate
+            // 
+            this.tb_FTBRate.BackColor = System.Drawing.Color.Black;
+            this.tb_FTBRate.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_FTBRate.ForeColor = System.Drawing.Color.Yellow;
+            this.tb_FTBRate.Location = new System.Drawing.Point(902, 499);
+            this.tb_FTBRate.Name = "tb_FTBRate";
+            this.tb_FTBRate.ReadOnly = true;
+            this.tb_FTBRate.Size = new System.Drawing.Size(60, 35);
+            this.tb_FTBRate.TabIndex = 218;
+            this.tb_FTBRate.Text = "30";
+            this.tb_FTBRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btn_editor
+            // 
+            this.btn_editor.AccessibleDescription = "";
+            this.btn_editor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_editor.BackgroundImage")));
+            this.btn_editor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_editor.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_editor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_editor.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editor.ForeColor = System.Drawing.Color.White;
+            this.btn_editor.Location = new System.Drawing.Point(902, 396);
+            this.btn_editor.Name = "btn_editor";
+            this.btn_editor.Size = new System.Drawing.Size(132, 60);
+            this.btn_editor.TabIndex = 219;
+            this.btn_editor.Text = "Editor";
+            this.btn_editor.UseVisualStyleBackColor = true;
+            this.btn_editor.Click += new System.EventHandler(this.btn_editor_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(913, 472);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(38, 16);
+            this.label13.TabIndex = 220;
+            this.label13.Text = "Rate";
             // 
             // BMInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::BMDGLC.Properties.Resources.Switcherbackground;
             this.ClientSize = new System.Drawing.Size(1065, 570);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.btn_editor);
+            this.Controls.Add(this.tb_FTBRate);
+            this.Controls.Add(this.btn_FTB);
+            this.Controls.Add(this.tb_DKey2Rate);
+            this.Controls.Add(this.tb_DKey1Rate);
+            this.Controls.Add(this.tb_TransitionFrames);
             this.Controls.Add(this.btn_prevtrans);
             this.Controls.Add(this.btn_mix);
             this.Controls.Add(this.btn_wipe);
@@ -1899,8 +2072,10 @@
             this.Controls.Add(this.btn_key3air);
             this.Controls.Add(this.btn_key4air);
             this.Controls.Add(this.btn_key1air);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BMInterface";
             this.Text = "BMInterface";
+            this.Load += new System.EventHandler(this.BMInterface_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBarTransitionPos)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -1991,7 +2166,7 @@
         private System.Windows.Forms.ToolStripMenuItem previewToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem aux1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem black1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem blackToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hDMI1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hDMI2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hDMI3ToolStripMenuItem;
@@ -2044,8 +2219,12 @@
         private System.Windows.Forms.Button btn_key4air;
         private System.Windows.Forms.Button btn_key1air;
         private System.Windows.Forms.Button btn_auto;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_TransitionFrames;
+        private System.Windows.Forms.TextBox tb_DKey1Rate;
+        private System.Windows.Forms.TextBox tb_DKey2Rate;
+        private System.Windows.Forms.Button btn_FTB;
+        private System.Windows.Forms.TextBox tb_FTBRate;
+        private System.Windows.Forms.Button btn_editor;
+        private System.Windows.Forms.Label label13;
     }
 }
