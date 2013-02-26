@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{077780EC-0672-4E98-B89A-6CAF36CD942E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SwitcherPanelCSharp</RootNamespace>
+    <AssemblyName>SwitcherPanelCSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="VideoTalk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoTalk.Designer.cs">
+      <DependentUpon>VideoTalk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theater10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theater10.Designer.cs">
+      <DependentUpon>Theater10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theater9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theater9.Designer.cs">
+      <DependentUpon>Theater9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lights.designer.cs">
+      <DependentUpon>Lights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theater8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theater8.Designer.cs">
+      <DependentUpon>Theater8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SwitcherAPIHelper.cs" />
+    <Compile Include="SwitcherMonitors.cs" />
+    <Compile Include="SwitcherPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SwitcherPanel.Designer.cs">
+      <DependentUpon>SwitcherPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TheaterSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheaterSelect.Designer.cs">
+      <DependentUpon>TheaterSelect.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VideoTalk.resx">
+      <DependentUpon>VideoTalk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theater10.resx">
+      <DependentUpon>Theater10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theater9.resx">
+      <DependentUpon>Theater9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lights.resx">
+      <DependentUpon>Lights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theater8.resx">
+      <DependentUpon>Theater8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SwitcherPanel.resx">
+      <DependentUpon>SwitcherPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TheaterSelect.resx">
+      <DependentUpon>TheaterSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttongreen.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttongrey.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonred.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonyellow.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="BMDSwitcherAPI">
+      <Guid>{8A92B919-156C-4D61-94EF-03F9BE4004B0}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Switcherbackground.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

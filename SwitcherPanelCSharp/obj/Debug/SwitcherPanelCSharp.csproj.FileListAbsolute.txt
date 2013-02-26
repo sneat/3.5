@@ -1,0 +1,28 @@
+C:\Program Files (x86)\Blackmagic Design\Blackmagic ATEM Switchers\Developer SDK\Win\Samples\SwitcherPanelCSharp\obj\Debug\Interop.BMDSwitcherAPI.dll
+C:\Program Files (x86)\Blackmagic Design\Blackmagic ATEM Switchers\Developer SDK\Win\Samples\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.csproj.ResolveComReference.cache
+C:\Program Files (x86)\Blackmagic Design\Blackmagic ATEM Switchers\Developer SDK\Win\Samples\SwitcherPanelCSharp\bin\Debug\SwitcherPanelCSharp.exe
+C:\Program Files (x86)\Blackmagic Design\Blackmagic ATEM Switchers\Developer SDK\Win\Samples\SwitcherPanelCSharp\bin\Debug\SwitcherPanelCSharp.pdb
+C:\Program Files (x86)\Blackmagic Design\Blackmagic ATEM Switchers\Developer SDK\Win\Samples\SwitcherPanelCSharp\bin\Debug\Interop.BMDSwitcherAPI.dll
+C:\Program Files (x86)\Blackmagic Design\Blackmagic ATEM Switchers\Developer SDK\Win\Samples\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Blackmagic Design\Blackmagic ATEM Switchers\Developer SDK\Win\Samples\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.Properties.Resources.resources
+C:\Program Files (x86)\Blackmagic Design\Blackmagic ATEM Switchers\Developer SDK\Win\Samples\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.SwitcherPanel.resources
+C:\Program Files (x86)\Blackmagic Design\Blackmagic ATEM Switchers\Developer SDK\Win\Samples\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Blackmagic Design\Blackmagic ATEM Switchers\Developer SDK\Win\Samples\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.exe
+C:\Program Files (x86)\Blackmagic Design\Blackmagic ATEM Switchers\Developer SDK\Win\Samples\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.pdb
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\obj\Debug\Interop.BMDSwitcherAPI.dll
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.csproj.ResolveComReference.cache
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.exe
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.pdb
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\bin\Debug\SwitcherPanelCSharp.exe
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\bin\Debug\SwitcherPanelCSharp.pdb
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\bin\Debug\Interop.BMDSwitcherAPI.dll
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.csprojResolveAssemblyReference.cache
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.Properties.Resources.resources
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.SwitcherPanel.resources
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.csproj.GenerateResource.Cache
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.Theater8.resources
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.TheaterSelect.resources
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.Lights.resources
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.VideoTalk.resources
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.Theater10.resources
+C:\Users\Frank\Desktop\SwitcherPanelCSharp\obj\Debug\SwitcherPanelCSharp.Theater9.resources

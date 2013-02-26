@@ -1,0 +1,7 @@
+C:\Users\Frank\Downloads\PeakMeterCS\PeakMeterCtrl\bin\Debug\PeakMeterCtrl.dll
+C:\Users\Frank\Downloads\PeakMeterCS\PeakMeterCtrl\bin\Debug\PeakMeterCtrl.pdb
+C:\Users\Frank\Downloads\PeakMeterCS\PeakMeterCtrl\obj\Debug\PeakMeterCtrl.csprojResolveAssemblyReference.cache
+C:\Users\Frank\Downloads\PeakMeterCS\PeakMeterCtrl\obj\Debug\PeakMeterCtrl.Properties.Resources.resources
+C:\Users\Frank\Downloads\PeakMeterCS\PeakMeterCtrl\obj\Debug\PeakMeterCtrl.csproj.GenerateResource.Cache
+C:\Users\Frank\Downloads\PeakMeterCS\PeakMeterCtrl\obj\Debug\PeakMeterCtrl.dll
+C:\Users\Frank\Downloads\PeakMeterCS\PeakMeterCtrl\obj\Debug\PeakMeterCtrl.pdb

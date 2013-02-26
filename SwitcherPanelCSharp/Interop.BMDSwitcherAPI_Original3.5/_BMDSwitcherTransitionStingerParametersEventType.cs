@@ -1,0 +1,17 @@
+using System;
+
+namespace BMDSwitcherAPI
+{
+	public enum _BMDSwitcherTransitionStingerParametersEventType
+	{
+		bmdSwitcherTransitionStingerParametersEventTypeClipDurationChanged = 1667527235,
+		bmdSwitcherTransitionStingerParametersEventTypeClipChanged = 1668051011,
+		bmdSwitcherTransitionStingerParametersEventTypeGainChanged = 1735288131,
+		bmdSwitcherTransitionStingerParametersEventTypeInverseChanged = 1768846915,
+		bmdSwitcherTransitionStingerParametersEventTypeMixRateChanged = 1836610115,
+		bmdSwitcherTransitionStingerParametersEventTypePreMultipliedChanged = 1886221635,
+		bmdSwitcherTransitionStingerParametersEventTypePrerollChanged = 1886547011,
+		bmdSwitcherTransitionStingerParametersEventTypeSourceChanged = 1936876355,
+		bmdSwitcherTransitionStingerParametersEventTypeTriggerPointChanged = 1952936003
+	}
+}

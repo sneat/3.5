@@ -1,0 +1,5 @@
+C:\Users\Frank\Desktop\Interop.BMDSwitcherAPI_Original3.5\obj\Debug\Interop.BMDSwitcherAPI.csprojResolveAssemblyReference.cache
+C:\Users\Frank\Desktop\Interop.BMDSwitcherAPI_Original3.5\bin\Debug\Interop.BMDSwitcherAPI.dll
+C:\Users\Frank\Desktop\Interop.BMDSwitcherAPI_Original3.5\bin\Debug\Interop.BMDSwitcherAPI.pdb
+C:\Users\Frank\Desktop\Interop.BMDSwitcherAPI_Original3.5\obj\Debug\Interop.BMDSwitcherAPI.dll
+C:\Users\Frank\Desktop\Interop.BMDSwitcherAPI_Original3.5\obj\Debug\Interop.BMDSwitcherAPI.pdb

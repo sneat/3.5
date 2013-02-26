@@ -1,0 +1,18 @@
+using System;
+
+namespace BMDSwitcherAPI
+{
+	public enum _BMDSwitcherTransitionWipeParametersEventType
+	{
+		bmdSwitcherTransitionWipeParametersEventTypeBorderSizeChanged = 1650750275,
+		bmdSwitcherTransitionWipeParametersEventTypeFlipFlopChanged = 1717989443,
+		bmdSwitcherTransitionWipeParametersEventTypeHorizontalOffsetChanged = 1752131139,
+		bmdSwitcherTransitionWipeParametersEventTypeInputBorderChanged = 1768972867,
+		bmdSwitcherTransitionWipeParametersEventTypePatternChanged = 1885434947,
+		bmdSwitcherTransitionWipeParametersEventTypeReverseChanged = 1919252035,
+		bmdSwitcherTransitionWipeParametersEventTypeRateChanged = 1920230723,
+		bmdSwitcherTransitionWipeParametersEventTypeSoftnessChanged = 1936094275,
+		bmdSwitcherTransitionWipeParametersEventTypeSymmetryChanged = 1937337667,
+		bmdSwitcherTransitionWipeParametersEventTypeVerticalOffsetChanged = 1987012163
+	}
+}
